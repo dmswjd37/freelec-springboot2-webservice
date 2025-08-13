@@ -25,4 +25,16 @@ public class IndexControllerTest {
         //then
         assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
     }
+
+    @Test
+    public void postsSave가_리턴된다() {
+        //given
+        String expected = "posts-save";
+
+        //when
+        String body = this.restTemplate.getForObject("/posts/save", String.class);
+
+        //then
+        assertThat(body).isEqualTo(expected);
+    }
 }

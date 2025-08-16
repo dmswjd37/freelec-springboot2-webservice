@@ -1,6 +1,6 @@
 package com.jojoldu.book.springboot.domain.posts;
 
-import org.junit.After;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    @After
+    @AfterEach
     public void cleanup() {
         postsRepository.deleteAll();
     }

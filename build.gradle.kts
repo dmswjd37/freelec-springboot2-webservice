@@ -29,7 +29,7 @@ dependencies {
     implementation("org.mariadb.jdbc:mariadb-java-client")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    //testImplementation("org.springframework.security:spring-security-test")
+    testImplementation("org.springframework.security:spring-security-test")
     testImplementation("junit:junit:4.13.2")
 }
 

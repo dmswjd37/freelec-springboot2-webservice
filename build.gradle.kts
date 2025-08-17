@@ -1,5 +1,3 @@
-import java.text.SimpleDateFormat
-
 plugins {
     id("java")
     eclipse
@@ -10,7 +8,7 @@ plugins {
 
 group = "com.jojoldu.book"
 version = "1.0-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
     mavenCentral()

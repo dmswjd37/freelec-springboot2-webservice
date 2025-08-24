@@ -58,4 +58,4 @@ jobs:
 
     # S3 업로드 실행
     - name: Upload to S3
-      run: aws s3 sync deploy s3://freelec-springboot-build --acl private
+      run: aws s3 sync deploy s3://freelec-springboot-build-sogo --acl private
